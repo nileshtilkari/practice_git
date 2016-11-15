@@ -12,16 +12,17 @@ app.controller("myCtrl", function($scope) {
     }
 });
 </script>
+<style></style>
 
 <div ng-app="myShoppingList" ng-controller="myCtrl">
   <ul>
-    <li ng-repeat="x in products">{{x}}</li>
+    <li ng-repeat="x for x in products">{{x}}</li>
   </ul>
   <input ng-model="addMe">
   <button ng-click="addItem()">Add</button>
 </div>
 
-<p>Write in the input field to add items.</p>
+<p>Write in the input field</p>
 
 </body>
 </html>
